@@ -24,6 +24,7 @@ fi
 
 cd ${BUSYBOX_DIR}
 make defconfig
+yes "" | make oldconfig
 sed -i 's/# CONFIG_STATIC is not set/CONFIG_STATIC=y/' .config
 make -j$(nproc)
 make CONFIG_PREFIX=../${ROOTFS} install
