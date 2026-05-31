@@ -5,7 +5,7 @@ jmp start
 nop
 
 KERNEL_SEGMENT equ 0x1000
-KERNEL_SECTORS equ 15
+KERNEL_SECTORS equ 4
 
 start:
 

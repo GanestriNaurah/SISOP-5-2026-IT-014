@@ -127,10 +127,17 @@ void intToString(int n, char* str) {
     }
 
     while (n > 0) {
-        str[i] = (n % 10) + '0';
-        n = n / 10;
-        i++;
-    }
+
+    int digit;
+
+    digit = n - (n / 10) * 10;
+
+    str[i] = digit + '0';
+
+    n = n / 10;
+
+    i++;
+}
 
     str[i] = 0;
 
