@@ -62,6 +62,7 @@ Filesystem kemudian dikemas menjadi:
 ```text
 osboot/multi.gz
 ```
+<img width="1178" height="415" alt="Screenshot 2026-05-30 214108" src="https://github.com/user-attachments/assets/2e2ef209-1139-4990-9a61-ea12be15afee" />
 
 ### Membuat ISO Bootable
 
@@ -76,6 +77,7 @@ Output:
 ```text
 osboot/farewell.iso
 ```
+<img width="1412" height="779" alt="Screenshot 2026-05-30 214321" src="https://github.com/user-attachments/assets/2f3e18f3-e9ed-4485-b1d4-18c732d463c7" />
 
 ### Menjalankan Sistem Operasi
 
@@ -84,18 +86,21 @@ Script `qemu.sh` digunakan untuk menjalankan sistem operasi dalam tiga mode:
 ```bash
 ./qemu.sh --single
 ```
+<img width="1439" height="756" alt="Screenshot 2026-05-30 214410" src="https://github.com/user-attachments/assets/1647b7ff-c5cc-4fc8-a1bf-a87d8ead9bbc" />
 
 Digunakan untuk boot ke single user filesystem.
 
 ```bash
 ./qemu.sh --multi
 ```
+<img width="1451" height="835" alt="Screenshot 2026-05-30 214739" src="https://github.com/user-attachments/assets/926cd753-9d8c-4a84-8d7e-b02fd00b27d6" />
 
 Digunakan untuk boot ke multi user filesystem.
 
 ```bash
 ./qemu.sh --all
 ```
+<img width="1438" height="909" alt="Screenshot 2026-05-30 214758" src="https://github.com/user-attachments/assets/c89cb388-5e83-472e-9ee2-0ca9e793789f" />
 
 Digunakan untuk boot melalui ISO dan menampilkan menu GRUB.
 
